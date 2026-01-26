@@ -1,4 +1,5 @@
 \section{}
+In the following, let $g$ and $h$ be elements of group $G$ if unspecified, and let $e$ be the identity.
 \epigraph{\textbb{Definition.} A group is a groupoid with a single object}{Joke}
 \begin{problem}
     Write a careful proof that every group is the group of isomorphisms of a groupoid. In particular, every group is the group of automorphisms of some object in some category.
@@ -12,4 +13,16 @@
 \end{problem}
 \begin{soln}
     Nani?
+\end{soln}
+\begin{problem}
+    Prove that $(gh)\inv=h\inv g\inv$.
+\end{problem}
+\begin{soln}
+    Because $(gh)\inv\cdot h\inv g\inv=e$.
+\end{soln}
+\begin{problem}
+    Suppose $g^2=e$ for all $g$. Show that $G$ is abelian.
+\end{problem}
+\begin{soln}
+    $gh=g\inv h\inv=(hg)\inv=hg$.
 \end{soln}
