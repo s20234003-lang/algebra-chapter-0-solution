@@ -53,7 +53,7 @@ In the following, let $G$ be a grouplet $g$ and $h$ be elements of group $G$ if 
 \end{soln}
 \begin{problem}
 	Prove that there is only one possible Cayley Table for $G$ if $G$ has exactly $1$, $2$, or $3$ elements.
-	Analyze the possible multiplication tables for groups with exactly $4$ elements, and show that there are two distinct tables,
+	Analyze the possible Cayley tables for groups with exactly $4$ elements, and show that there are two distinct tables,
 	up to reordering the elements of G. Use these tables to prove that all groups with $\leq 4$ elements are commutative.
 	(You are welcome to analyze groups with 5 elements using the same technique, but you will soon know enough about groups
 	to be able to avoid such brute-force approaches.)
@@ -69,10 +69,16 @@ In the following, let $G$ be a grouplet $g$ and $h$ be elements of group $G$ if 
 				$a\circ b=e$
 			\end{claim*}
 			\begin{proof}
-				Assume on the contrary $a^2=e$. Then $b^2=e$
-				The Cayley table would look like this:
-				\begin{center}\begin{tabular}{c||c|c|c}
-					$\circ$
+				Assume on the contrary $a^2=e$.
+				Then $b\circ a$ is not $a^2=e$, nor $e\circ a=a$, nor $b\circ e=b$ by the previous problem, contradiction!
 			\end{proof}
+			So now the Cayley table would be like:
+			\begin{center}\begin{tabular}{c||c|c|c}
+				$\circ$ & $e$ & $a$ & $b$\\\hline\hline
+				$e$ & $e$ & $a$ & $b$\\\hline
+				$a$ & $a$ & $b$ & $e$\\\hline
+				$b$ & $b$ & $e$ & $a$
+			\end{tabular}\end{center}
+	\ii Assume $|G|=4$. 
 	\end{itemize}
 \end{soln}
