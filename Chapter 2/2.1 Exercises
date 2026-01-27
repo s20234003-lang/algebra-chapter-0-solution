@@ -79,6 +79,27 @@ In the following, let $G$ be a grouplet $g$ and $h$ be elements of group $G$ if 
 				$a$ & $a$ & $b$ & $e$\\\hline
 				$b$ & $b$ & $e$ & $a$
 			\end{tabular}\end{center}
-	\ii Assume $|G|=4$. 
+	\ii Assume $|G|=4$.
 	\end{itemize}
+\end{soln}
+\begin{problem}
+	Let $g$ be of finite order. Then $g^N=e$ iff $\lvert g\rvert\mid N$
+\end[problem}
+\begin{soln}
+	Let $N=d\lvert g\rvert +r$, where $0\leq r\le \lvert g\rvert$. Then $g^N=e$ iff $g^r=e$ iff $r=0$.
+\end{soln}
+\begin{problem}
+	Let $G$ be a finite abelian group with exactly one element $f$ with order $2$. Show that $\prod_{g\in G}g=f$.
+\end{problem}
+\begin{soln}
+	The problem is equivalent to $\prod\limits_{\substack{\lvert g\rvert\geq 3\\ g\in G}}g=e$.
+	Using an argument similar to Wilson, $\prod\limits_{\substack{\lvert g\rvert\geq 3\\ g\in G}}g=e$.
+\end{soln}
+\begin{problem}
+	Let $n=\lvert G\rvert$, $m$ be the number of elements that have order $2$. Show that $n-m$ is odd.
+	In particular, if $n$ is even, show that there exists an element with order $2$.
+\end{problem}
+\begin{soln}
+	Using the same argument as the above, pair $g$ with $g\inv$ if the order of $g$ is $\geq 3$.
+	The second part follows.
 \end{soln}
