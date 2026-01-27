@@ -53,11 +53,23 @@ In the following, let $G$ be a grouplet $g$ and $h$ be elements of group $G$ if 
 \end{soln}
 \begin{problem}
 	Prove that there is only one possible Cayley Table for $G$ if $G$ has exactly $1$, $2$, or $3$ elements.
-	Analyze the possible multiplication tables for groups with exactly $4$ elements, and show that there are two distinct 		tables, up to reordering the elements of G. Use these tables to prove that all groups with $\leq 4$ elements are commutative.
-	(You are welcome to analyze groups with 5 elements using the same technique, but you will soon know enough about groups to be able to avoid such brute-force approaches.)
+	Analyze the possible multiplication tables for groups with exactly $4$ elements, and show that there are two distinct tables,
+	up to reordering the elements of G. Use these tables to prove that all groups with $\leq 4$ elements are commutative.
+	(You are welcome to analyze groups with 5 elements using the same technique, but you will soon know enough about groups
+	to be able to avoid such brute-force approaches.)
 \end{problem}
 \begin{soln}
 	\begin{itemize}
-	\ii Identity must
+		\ii Identity must exist in a group, so if $|G|=1$, the only element in $G$ must be the identity, i.e. $G$ is the trivial group
+		\ii Assume $|G|=2$. Then $G={e,a}$ with $e\neq a$. Consider $a\inv$ now. It must be $a$, for if $e=a\inv$,
+			we have $a=a\circ e=a\circ a\inv=e$, contradiction.
+		\ii Assume $|G|=3$. Then $G={e,a,b}$. COnsider $a\inv$ again. By the above argument, it is not the identity $e$.
+			So hence $a^2=e$ or $a\circ b=e$
+			\begin{claim*}
+				$a\circ b=e$
+			\end{claim*}
+			\begin{proof}
+				Assume on the contrary $a\circ b$
+			\end{proof}
 	\end{itemize}
 \end{soln}
