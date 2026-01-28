@@ -79,7 +79,10 @@ In the following, let $G$ be a grouplet $g$ and $h$ be elements of group $G$ if 
 				$a$ & $a$ & $b$ & $e$\\\hline
 				$b$ & $b$ & $e$ & $a$
 			\end{tabular}\end{center}
-	\ii Assume $|G|=4$.
+	\ii Assume $|G|=4$. If there exists an element $a$ with order $4$, then $G={1,a,a^2,a^3}$, so one group up to isomorphism. 
+		Otherwise, take an element $g\neq e$. The order of $g$ is $2$ or $3$.
+		If the order of $g$ is $3$, let $G={e,g,g^2,x}$, contradiction by considering $x\circ g$.
+	\ii If $\G|=5$, I would just apply langrange's theorem, discussed later. It's too difficult without it
 	\end{itemize}
 \end{soln}
 \begin{problem}
@@ -103,3 +106,14 @@ In the following, let $G$ be a grouplet $g$ and $h$ be elements of group $G$ if 
 	Using the same argument as the above, pair $g$ with $g\inv$ if the order of $g$ is $\geq 3$.
 	The second part follows.
 \end{soln}
+\begin{problem}
+	Suppose the order of $g$ is odd. What can we say about $g^2$?
+\end{problem}
+\begin{soln}
+	I claim that $\left\lvert g^2\right\rvert=\lvert g\rvert$. Indeed assume $g^{2k-1}=e$ where $\lvert g\rvert=2k-1$.
+	Then $(g^2)^\ell=e$ iff $g^{2\ell}=e$ implies $(2\ell=2k-1$ or $\ell\geq 2k-1)$ iff $\ell\geq 2k-1$.
+	Now $(g^2)^{2k-1}=e$, done.
+\end{soln}
+\begin{remark}
+	In fact if $|g|=n$, $\left\lvert g^2\right\rvert=\frac{3-(-1)^n}{4}n$
+\end{remark}
